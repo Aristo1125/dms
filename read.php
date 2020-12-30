@@ -14,18 +14,19 @@ if (($handle = fopen("data/docmanagementdata.csv", "r")) !== FALSE) {
     echo '<table>';
     while (($data = fgetcsv($handle))) {
         //echo "${row}行目\n";
+        //echo $data[3];
+
         //$row++;
         echo '<tr>';
-        foreach ($data as $value) {
+        if ($data[3] != "1") {
+            //foreach ($data as $value) {
+            for($i = 0; $i < count($data) - 1; $i++) {
+                $value = $data[$i];
+                echo "<td>${value}\n</td>";
+
+                echo '<td>'
             
-            
-            echo "<td>${value}\n</td>";
-            //echo '<td>2015/01/01</td>';
-            //echo '<td>2020/12/31</td>';
-            
-            
-            //echo "${value}\n";
-            
+            }
         }
         echo '</tr>';
         //echo "<br>";
