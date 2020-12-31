@@ -25,10 +25,6 @@ for($i = 0; $i < count($delflag); $i++) {
     $record[$delflag[$i] -1 ][3] = "1"; 
 }
 
-echo $record[0][3];
-echo $record[1][3];
-echo $record[2][3];
-echo $record[3][3];
 
 // ファイルが存在しているかチェックする
 if (($handle = fopen("data/docmanagementdata.csv", "w")) !== FALSE) {
