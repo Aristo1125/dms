@@ -8,17 +8,18 @@ content="text/html; charset=UTF-8">
             保証書名：<input type="text" name="docname">
             開始日：<input type="date" name="startdate">
             終了日：<input type="date" name="enddate">
-            <input type="submit" value="送信する">
-            <script>
-            alert('JavaScriptのアラート');
-            </script>
+            <input type="submit" value="登録">
         </form>
     </header>
     <br>
+    
+        <?php include('read.php'); ?>
 
-    <?php include('read.php'); ?>
-
+        <br>
     <br>
+
+    
+    
 
 </body>
 </html>
