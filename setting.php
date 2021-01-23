@@ -9,21 +9,17 @@ content="text/html; charset=UTF-8">
 <html>
 <body>
     <header>
-	    <form action="scripts.php" method="POST" name="applicate">
-            保証書名：<input type="text" name="docname">
-            型番:<input type="text" name="typename">
-            開始日：<input type="date" name="startdate">
-            終了日：<input type="date" name="enddate">
+	    <form action="scripts.php" method="POST" name="setting">
+            LINE Notify-Token：<input type="text" name="notifyToken">
             <input type="submit" value="登録" onClick="return applicateChk();">
         </form>
     </header>
     <br>
-    
-        <?php include('scripts.php');
-            read();
-        ?>
+    <?php include('scripts.php');
+            readTokenData();
+            checkDocDate();
+    ?>
         
-        <br>
     <br>
 
     

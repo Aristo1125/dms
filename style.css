@@ -9,7 +9,7 @@ table th,table td{
     text-align: center;
   }
   
-table tr:nth-child(odd){
+table tr:nth-child(1){
     background-color: #eee
   }
 
